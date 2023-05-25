@@ -90,7 +90,6 @@ section{
          padding: 0 3%;
          padding-top: 1rem;
          padding-bottom: 1rem;
-   
       }
    }
 }
@@ -154,8 +153,8 @@ header .logo span{
 
 header .logo img{
    width: 30px;
-   
 }
+
 header .navbar a{
    font-size: 1rem;
    margin-left: 1.5rem;
@@ -359,17 +358,24 @@ header label{
 
 .aprender .columna .suscribete form{
    display: flex;
-   max-width: 70rem;
-   border: .2rem solid white;
-   padding: .5rem;
-   border-radius: 5rem;
-   margin: 2rem auto;
-   height: 5rem;
+      width: 100%;
+      border: .2rem solid white;
+      padding: .5rem;
+      border-radius: 5rem;
+      margin: 1rem auto;
+      height: 5rem;
+      @media screen and (max-width:450px) {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: auto;
+         flex-direction: column;
+      }
 }
 
 .aprender .columna .suscribete form input[ type="email"]{
    padding: 0 2rem;
-   font-size: 1.5rem;
+   font-size: 1.3rem;
    background: none;
    width: 100%;
    color: white;
@@ -383,7 +389,8 @@ header label{
 
 .aprender .columna .suscribete form input[type="submit"]{
    background: white;
-   width: 20rem;
+   width: auto;
+   padding: .5rem 1rem;
    font-size: 1.7rem;
    border-radius: 5rem;
    cursor: pointer;
