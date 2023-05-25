@@ -128,7 +128,7 @@ header{
    display: flex;
    top: 0;
    left: 0;
-   width: 100%;
+   width: 100vw;
    height: 3rem;
    background: linear-gradient(rgb(128, 0, 255), rgb(0, 217, 255) ) ;
    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
@@ -139,7 +139,7 @@ header{
 }
 
 header .logo{
-   font-size: 1.5rem;
+   font-size: 1.4rem;
    color: var(--orange);
    display: flex;
    justify-content: center;
@@ -152,12 +152,11 @@ header .logo span{
 }
 
 header .logo img{
-   width: 30px;
+   width: 2rem;
 }
 
 header .navbar a{
    font-size: 1rem;
-   margin-left: 1.5rem;
    color: rgb(255, 115, 0);
    text-shadow: 0 0 10px rgb(0, 0, 0);
 }
