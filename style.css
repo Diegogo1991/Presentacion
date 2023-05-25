@@ -331,8 +331,9 @@ header label{
    margin-left: 2rem;
 }
 
-.suscribete{
+.aprender .columna .suscribete{
    display: flex;
+   width: 100%;
    justify-content: center;
    flex-direction: column;
    box-sizing: border-box;
@@ -343,20 +344,20 @@ header label{
    background-position: center;
 }
 
-.suscribete h3{
+.aprender .columna .suscribete h3{
    color: aliceblue;
    font-size: 1.8rem;
    text-transform: uppercase;
 }
 
-.suscribete p{
+.aprender .columna .suscribete p{
    color: antiquewhite;
    font-size: 1.2rem;
    margin: 1rem auto;
-   width: 70rem;
+   width: auto;
 }
 
-.suscribete form{
+.aprender .columna .suscribete form{
    display: flex;
    max-width: 70rem;
    border: .2rem solid white;
@@ -366,7 +367,7 @@ header label{
    height: 5rem;
 }
 
-.suscribete form input[ type="email"]{
+.aprender .columna .suscribete form input[ type="email"]{
    padding: 0 2rem;
    font-size: 1.5rem;
    background: none;
@@ -375,12 +376,12 @@ header label{
    text-transform: none;
 }
 
-.suscribete form input[ type="email"]::placeholder{
+.aprender .columna .suscribete form input[ type="email"]::placeholder{
    color: aquamarine;
    text-transform: capitalize;
 }
 
-.suscribete form input[type="submit"]{
+.aprender .columna .suscribete form input[type="submit"]{
    background: white;
    width: 20rem;
    font-size: 1.7rem;
@@ -388,7 +389,7 @@ header label{
    cursor: pointer;
 }
 
-.suscribete form input[type="submit"]:hover{
+.aprender .columna .suscribete form input[type="submit"]:hover{
    color: var(--orange);
 }
 
@@ -664,10 +665,10 @@ header label{
    border-radius: 50%;
    background: whitesmoke;
    color: var(--orange);
-   font-size: 1.8rem;
-   height: 4.5rem;
-   width: 4.5rem;
-   line-height: 4.5rem;
+   font-size: 1.6rem;
+   height: 3rem;
+   width: 3rem;
+   line-height: 3rem;
    text-align: center;
 }
 
