@@ -472,12 +472,12 @@ header label{
    flex: 1 1 20rem;
    margin: 1rem;
    padding: 1rem;
-   background: rgba(140, 0, 255, 0.144);
-   border: .1rem solid rgba(4, 164, 192, 0.5);
+   background: rgba(0, 247, 255, 0.308);
+   border: .1rem solid rgba(1, 211, 248, 0.5);
    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
    border-radius: .5rem;
    text-align: center;
-   padding-bottom: 3rem;
+   padding-bottom: 1rem;
 }
 
 .clases .caja-contenedor .caja:hover{
