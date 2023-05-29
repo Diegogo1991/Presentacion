@@ -494,6 +494,7 @@ header label{
 .clases .caja-contenedor .caja .tipos{
    font-size: 2rem;
    color: var(--morado);
+   text-shadow: 0 0 10px black;
    padding: .6rem 0;
 }
 
