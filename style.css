@@ -71,7 +71,7 @@ html{
       font-size: 13px;
    }
    @media screen and(max-width: 450px){
-      font-size: 10px;
+      font-size: 11px;
    }
 }
 
@@ -132,7 +132,7 @@ header{
    height: 3rem;
    background: linear-gradient(rgb(128, 0, 255), rgb(0, 217, 255) ) ;
    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
-   padding: 1rem 1rem;  /*PENDIENTE*/
+   padding: 1rem 0;  /*PENDIENTE*/
    align-items: center;
    justify-content: space-evenly;
    z-index: 1000;
@@ -182,7 +182,7 @@ header label{
    display: flex;
    align-items: center;
    justify-content: space-evenly;
-   background: url(img/fondo2.jpg) no-repeat;
+   background: url(./img/fondo2.jpg) no-repeat;
    background-size: cover;
    background-position: center;
 }
@@ -273,15 +273,9 @@ header label{
    text-transform: none;
    text-shadow: 0 0 10px black;
 }
-.acercade .caja-contenedor .caja a{
-   margin-top: 0;
-   @media screen and (min-width: 1200px) {
-      
-   }
-}
 
 .aprender{
-   background: url(/img/stars3.jpg) no-repeat;
+   background: url(./img/stars3.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    padding-bottom: 1rem;
@@ -424,13 +418,6 @@ header label{
    text-transform: none;
 }
 
-/*.coleccion .caja-contenedor .caja .fa-car, .coleccion .caja-contenedor .caja .fa-shield-cat, .coleccion .caja-contenedor .caja .fa-shuttle-space{
-   position: absolute;
-   top: 1rem;
-   right: 2rem;
-   font-size: 2rem;
-   color: var(--orange)
-}*/
 .coleccion .caja-contenedor .caja .carro{
    box-sizing: border-box;
    width: 100%;
@@ -622,7 +609,7 @@ header label{
 
 .footer{
    padding-top: 3rem;
-   background: url(img/footer/footer.png) no-repeat;
+   background: url(./img/footer/footer.png) no-repeat;
    background-size: cover;
    background-position: center;
 }
@@ -635,6 +622,8 @@ header label{
 .footer .caja-contenedor .caja{
    flex: 1 1 25rem;
    margin: 1rem;
+   text-align: center;
+   justify-content: center;
 }
 
 .footer .caja-contenedor .caja h3{
@@ -647,7 +636,7 @@ header label{
 }
 
 .footer .caja-contenedor .caja p{
-   height: 1.5rem;
+   height: auto;
    padding: .5rem 0;
    color: rgb(255, 255, 255);
    text-shadow: 0 0 15px black;
@@ -667,6 +656,7 @@ header label{
 .footer .caja-contenedor .caja .info{
    display: flex;
    align-items: center;
+   justify-content: center;
 }
 
 .footer .caja-contenedor .caja .info i{
