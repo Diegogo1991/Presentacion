@@ -311,12 +311,14 @@ header label{
    color: rgb(255, 255, 255);
    text-transform: none;
    text-shadow: 0 0 10px black;
+   font-weight: lighter;
 }
 .aprender .columna .content h2 {
    font-size: 1.3rem;
    color: rgb(255, 255, 255);
    text-transform: none;
    text-shadow: 0 0 13px black;
+   font-weight: lighter;
 }
 .aprender .columna .content p{
    font-size: 1rem;
