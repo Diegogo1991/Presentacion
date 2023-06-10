@@ -650,10 +650,14 @@ header label{
    text-shadow: 0 0 15px black;
    text-decoration: underline;
    text-underline-offset: 1rem;
+   @media(max-width: 300px){
+      font-size: 1.4rem;
+   }
 }
 
 .footer .caja-contenedor .caja p{
    height: auto;
+   font-size: 1rem;
    padding: .5rem 0;
    color: rgb(255, 255, 255);
    text-shadow: 0 0 15px black;
@@ -664,6 +668,9 @@ header label{
    font-size: 1.5rem;
    padding: .5rem 0;
    color: wheat;
+   @media(max-width: 300px) {
+      font-size: 1rem;
+   }
 }
 
 .footer .caja-contenedor .caja a:hover{
@@ -678,6 +685,7 @@ header label{
 }
 
 .footer .caja-contenedor .caja .info i{
+   object-fit: contain;
    margin: .5rem 0;
    margin-right: 1rem;
    border-radius: 50%;
@@ -688,6 +696,14 @@ header label{
    width: 3rem;
    line-height: 3rem;
    text-align: center;
+}
+/*PENDIENTE*/
+.footer .caja-contenedor .caja .info p {
+   height: auto;
+   font-size: 1rem;
+   padding: .5rem 0;
+   color: rgb(255, 255, 255);
+   text-shadow: 0 0 15px black;
 }
 
 .footer .creditos{
