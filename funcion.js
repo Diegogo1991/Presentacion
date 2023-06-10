@@ -55,19 +55,20 @@ creador.addEventListener('click', crearElemento);*/
 
 //VALIDACION FORMULARIOS
 
+//VALIDACION FORMULARIO SUSCRIBIRSE
+
 const expresiones = {
-   usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-   nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-   password: /^.{4,12}$/, // 4 a 12 digitos.
    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-   telefono: /^\d{7,14}$/ // 7 a 14 numeros.
+   Nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+   Email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+   telefono: /^\d{7,10}$/ // 7 a 14 numeros.
 }
 
-const form = document.getElementById('suscribeteform');
+const formSuscri = document.getElementById('suscribeteform');
 const inputs = document.querySelectorAll('#suscribeteform input');
-const enviarForm = false;
+const enviarFormSuscri = false;
 
-const validarFormulario = (e) => {
+const validarFormularioSuscribirse = (e) => {
    e.target.name;
    switch (e.target.name) {
       case "correo":
@@ -76,13 +77,13 @@ const validarFormulario = (e) => {
             document.getElementById('suscribeteform').style.border = ".2rem solid white";
             document.getElementById('correo').style.color = "aquamarine";
             document.getElementById('enviarcorreo').style.background = "white";
-            enviarForm = true;
+            enviarFormSuscri = true;
          } else {
             console.log('no funciona');
             document.getElementById('suscribeteform').style.border = ".2rem solid rgb(248, 75, 75)";
             document.getElementById('correo').style.color = "rgb(248, 75, 75)";
             document.getElementById('enviarcorreo').style.background = "rgb(248, 75, 75)";
-            enviarForm = false;
+            enviarFormSuscri = false;
          }
          break;
       case "enviarcorreo":
@@ -95,12 +96,70 @@ const validarFormulario = (e) => {
 }
 
 inputs.forEach((input) => {
-   input.addEventListener('keyup', validarFormulario);
-   input.addEventListener('blur', validarFormulario)
+   input.addEventListener('keyup', validarFormularioSuscribirse);
+   input.addEventListener('blur', validarFormularioSuscribirse)
 })
 
-form.addEventListener('submit', (e) => {
+formSuscri.addEventListener('submit', (e) => {
    e.preventDefault();
-   if (enviarForm == true) {
+   if (enviarFormSuscri == true) {
 
-   }})
+   }
+})
+
+/*VALIDACIÓN FORMULARIO CONTACTO*/
+const formContact = document.getElementById('contactForm');
+const inputsContact = document.querySelectorAll('#contactForm input');
+
+const enviarFormContact = {
+   Nombre: false,
+   Email: false,
+   Telefono: false
+}
+
+const validarFormularioContact = (e) => {
+   e.target.name;
+   switch (e.target.name) {
+      case "Nombre":
+         validarCampo(expresiones.Nombre, e.target, 'Nombre')
+         break;
+      case "Email":
+         validarCampo(expresiones.Email, e.target, 'Email')
+         break;
+      case "Telefono":
+         validarCampo(expresiones.telefono, e.target, 'Telefono')
+         break;
+      default:
+         break;
+   }
+}
+
+const validarCampo = (expresion, input, campo) => {
+   if (expresion.test(input.value)) {
+      console.log('funciona');
+      document.getElementById(campo).style.display = 'none';
+      document.querySelector(`#contactForm .p${campo}`).style.display = 'none';
+      document.getElementById(`input${campo}`).style.borderBottom = '.1rem solid rgba(0, 0, 0, 0.2)';
+      enviarFormContact[campo] = true;
+   } else {
+      console.log('no funciona');
+      document.getElementById(campo).style.display = 'flex';
+      document.querySelector(`#contactForm .p${campo}`).style.display = 'flex';
+      document.getElementById(`input${campo}`).style.borderBottom = '.2rem solid rgba(255, 0, 0, 0.5)';
+      enviarFormContact[campo] = false;
+   }
+}
+
+inputsContact.forEach((input) => {
+   input.addEventListener('keyup', validarFormularioContact);
+   input.addEventListener('blur', validarFormularioContact)
+})
+
+formContact.addEventListener('submit', (e) => {
+   e.preventDefault();
+   if (enviarFormContact.Nombre &&
+      enviarFormContact.Email &&
+      enviarFormContact.Telefono) {
+
+   }
+})
