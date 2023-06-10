@@ -243,20 +243,28 @@
       <form action="">
          <h1 class="heading"> Contacto</h1>
          <div class="inputcaja">
-            <input type="text" required name="" id="">
+            <input type="text" required name="Nombre" id="inputNombre">
             <label for="">Nombre</label>
+            <i id="Nombre" class="fa-solid fa-circle-exclamation"></i>
+            <P class="pNombre">Solo letras y espacios, pueden llevar acentos.</P>
          </div>
          <div class="inputcaja">
-            <input type="email" required name="" id="">
+            <input type="email" required name="Email" id="inputEmail">
             <label for="">Email</label>
+            <i id="Email" class="fa-solid fa-circle-exclamation"></i>
+            <P class="pEmail">Ejemplo: ejemplo@gmail.com</P>
          </div>
          <div class="inputcaja">
-            <input type="number" required name="" id="">
+            <input type="number" required name="Telefono" id="inputTelefono">
             <label for="">Telefono</label>
+            <i id="Telefono" class="fa-solid fa-circle-exclamation"></i>
+            <P class="pTelefono">Entre 7 a 10 numeros solamente</P>
          </div>
          <div class="inputcaja">
-            <textarea required name="" id="" cols="30"></textarea>
+            <textarea required name="Mensaje" id="" cols="30"></textarea>
             <label for="">Mensaje</label>
+            <i id="Mensaje" class="fa-solid fa-circle-exclamation"></i>
+            <P>Dudas, sugerencias, motivo de contacto, con gusto responderé.</P>
          </div>
          <input type="submit" value="ENVIAR" class="btn">
       </form>
