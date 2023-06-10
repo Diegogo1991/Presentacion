@@ -632,7 +632,7 @@ header label{
 
 .footer .caja-contenedor{
    display: flex;
-   flex-wrap: wrap;
+   flex-wrap: wrap; /*PENDIENTE*/
 }
 
 .footer .caja-contenedor .caja{
@@ -644,6 +644,7 @@ header label{
 
 .footer .caja-contenedor .caja h3{
    font-size: 2rem;
+   flex-wrap: wrap; /*PENDIENTE*/
    padding: 1rem 0;
    color: wheat;
    text-shadow: 0 0 15px black;
@@ -671,6 +672,7 @@ header label{
 
 .footer .caja-contenedor .caja .info{
    display: flex;
+   flex-wrap: wrap;  /*PENDIENTE*/
    align-items: center;
    justify-content: center;
 }
