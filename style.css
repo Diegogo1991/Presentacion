@@ -650,9 +650,6 @@ header label{
    text-shadow: 0 0 15px black;
    text-decoration: underline;
    text-underline-offset: 1rem;
-   @media(max-width: 300px){
-      font-size: 1.4rem;
-   }
 }
 
 .footer .caja-contenedor .caja p{
@@ -679,10 +676,12 @@ header label{
 
 .footer .caja-contenedor .caja .info{
    display: flex;
-   flex-wrap: wrap;  /*PENDIENTE*/
+   width: auto;
+   flex-wrap: nowrap;  /*PENDIENTE*/
    align-items: center;
    justify-content: center;
 }
+
 
 .footer .caja-contenedor .caja .info i{
    object-fit: contain;
@@ -700,6 +699,7 @@ header label{
 /*PENDIENTE*/
 .footer .caja-contenedor .caja .info p {
    height: auto;
+   /*width: 100%;*/
    font-size: 1rem;
    padding: .5rem 0;
    color: rgb(255, 255, 255);
@@ -785,7 +785,56 @@ header label{
       width: 100%;
       text-align: center;
    }
-      .aprender .columna .content .bottons a:last-child{
-         margin: 1rem 0;
-      }
+   .aprender .columna .content .bottons a:last-child{
+      margin: 1rem 0;
+   }
+}
+
+@media (max-width:350px) {
+
+   .footer .caja-contenedor{
+      display: flex;
+      flex-wrap: wrap; /*PENDIENTE*/
+   }
+
+   .footer .caja-contenedor .caja{
+      flex: 1 1 25rem;
+      margin: .5rem;
+      text-align: center;
+      justify-content: center;
+   }
+
+   .footer .caja-contenedor .caja h3{
+      font-size: 1.5rem;
+      flex-wrap: wrap; /*PENDIENTE*/
+      padding: .5rem 0;
+   }
+
+   .footer .caja-contenedor .caja p{
+      height: auto;
+      font-size: .8rem;
+      padding: .5rem 0;
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 15px black;
+   }
+
+   .footer .caja-contenedor .caja a{
+      display: block;
+      font-size: 1rem;
+      padding: .5rem 0;
+      color: wheat;
+   }
+
+   .footer .caja-contenedor .caja .info i{
+      font-size: 1rem;
+      height: 2rem;
+      width: 2rem;
+      line-height: 2rem;
+   }
+   /*PENDIENTE*/
+   .footer .caja-contenedor .caja .info p{
+      height: auto;
+      /*width: 100%;*/
+      font-size: .8rem;
+   }
 }
