@@ -665,9 +665,6 @@ header label{
    font-size: 1.5rem;
    padding: .5rem 0;
    color: wheat;
-   @media(max-width: 300px) {
-      font-size: 1rem;
-   }
 }
 
 .footer .caja-contenedor .caja a:hover{
@@ -684,7 +681,6 @@ header label{
 
 
 .footer .caja-contenedor .caja .info i{
-   object-fit: contain;
    margin: .5rem 0;
    margin-right: 1rem;
    border-radius: 50%;
